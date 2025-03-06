@@ -57,6 +57,30 @@ class Tree {
             inorderRec(root.right); // Traverse right subtree
         }
     }
+
+    // Preorder Traversal (Root, Left, Right)
+    public void preorder(Node node) {
+        if (node == null) return;
+        System.out.print(node.data + " ");
+        preorder(node.left);
+        preorder(node.right);
+    }
+
+    // Inorder Traversal (Left, Root, Right)
+    public void inorder(Node node) {
+        if (node == null) return;
+        inorder(node.left);
+        System.out.print(node.data + " ");
+        inorder(node.right);
+    }
+
+    // Postorder Traversal (Left, Right, Root)
+    public void postorder(Node node) {
+        if (node == null) return;
+        postorder(node.left);
+        postorder(node.right);
+        System.out.print(node.data + " ");
+    }
 }
 
 // Main class to test the Tree implementation
