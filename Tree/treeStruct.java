@@ -100,6 +100,10 @@ public class treeStruct {
         // Print the inorder traversal of the tree
         System.out.println("Inorder traversal of the tree:");
         tree.inorder();
+        System.out.println();
+        tree.preorder(tree.root);
+        System.out.println();
+        tree.postorder(tree.root);
     }
 }
 
