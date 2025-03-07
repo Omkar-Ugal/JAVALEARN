@@ -3,6 +3,26 @@ class Solution {
     public int mySqrtInBuild(int x) {
         return (int)Math.sqrt(x);
     }
+    public boolean isPerfectSquare(int num) {
+        int start=0,end=num;
+        if(num < 2){
+            return true;
+        }
+        while(start<=end){
+            int mid = start+(end - start)/2;
+            long sq = (long)mid * mid;
+            if(sq == num){
+                return true;
+            }
+            else if(sq < num){
+                start = mid+1;
+            }
+            else{
+                end = mid-1;
+            }
+        }
+        return false;
+    }
     public int mySqrt(int x) {
         if(x == 0){
             return 0;
