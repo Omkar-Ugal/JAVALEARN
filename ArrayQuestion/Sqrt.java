@@ -1,5 +1,8 @@
 package ArrayQuestion;
 class Solution {
+    public int mySqrtInBuild(int x) {
+        return (int)Math.sqrt(x);
+    }
     public int mySqrt(int x) {
         if(x == 0){
             return 0;
