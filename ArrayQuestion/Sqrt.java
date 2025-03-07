@@ -22,6 +22,7 @@ class Solution {
 }
 public class Sqrt {
    public static void main(String[] args) {
-    
+    Solution sol = new Solution();
+    sol.mySqrt(100);
    } 
 }
