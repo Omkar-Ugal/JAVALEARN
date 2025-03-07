@@ -1,5 +1,8 @@
 package ArrayQuestion;
 
+import java.util.HashSet;
+import java.util.Set;
+
 class Solution {
     public int[] intersection(int[] nums1, int[] nums2) {
         Set<Integer> set = new HashSet<>();
